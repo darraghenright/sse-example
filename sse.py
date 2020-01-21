@@ -10,7 +10,7 @@ def sse_message(id: int, event: str, data: any='') -> str:
         f'data: {data}\n\n'
     )
 
-def sse_counter(max_count: int=3) -> str:
+def sse_counter(max_count: int=5) -> str:
     '''
     Counter as a stream of SSE messages
     '''
