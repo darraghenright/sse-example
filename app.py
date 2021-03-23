@@ -10,3 +10,6 @@ def index():
 @app.route('/sse/counter')
 def counter():
     return Response(sse_counter(), mimetype='text/event-stream')
+
+if '__main__' == __name__:
+    app.run(host='0.0.0.0', port=5000)
